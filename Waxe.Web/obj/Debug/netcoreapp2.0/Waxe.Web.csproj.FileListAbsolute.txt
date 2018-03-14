@@ -1,0 +1,8 @@
+C:\Users\oli.warriner\Source\Repos\Waxe.Web\Waxe.Web\bin\Debug\netcoreapp2.0\Waxe.Web.deps.json
+C:\Users\oli.warriner\Source\Repos\Waxe.Web\Waxe.Web\bin\Debug\netcoreapp2.0\Waxe.Web.runtimeconfig.json
+C:\Users\oli.warriner\Source\Repos\Waxe.Web\Waxe.Web\bin\Debug\netcoreapp2.0\Waxe.Web.runtimeconfig.dev.json
+C:\Users\oli.warriner\Source\Repos\Waxe.Web\Waxe.Web\bin\Debug\netcoreapp2.0\Waxe.Web.dll
+C:\Users\oli.warriner\Source\Repos\Waxe.Web\Waxe.Web\obj\Debug\netcoreapp2.0\Waxe.Web.csprojResolveAssemblyReference.cache
+C:\Users\oli.warriner\Source\Repos\Waxe.Web\Waxe.Web\obj\Debug\netcoreapp2.0\Waxe.Web.csproj.CoreCompileInputs.cache
+C:\Users\oli.warriner\Source\Repos\Waxe.Web\Waxe.Web\obj\Debug\netcoreapp2.0\Waxe.Web.AssemblyInfoInputs.cache
+C:\Users\oli.warriner\Source\Repos\Waxe.Web\Waxe.Web\obj\Debug\netcoreapp2.0\Waxe.Web.AssemblyInfo.cs

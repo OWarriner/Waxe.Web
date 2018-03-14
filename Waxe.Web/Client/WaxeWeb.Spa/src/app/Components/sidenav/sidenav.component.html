@@ -1,0 +1,57 @@
+<div>
+
+  <mat-toolbar color="#3e87c2" style="background: #000000; color:white; box-shadow: 0 2px 1px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.25)">
+        <div fxShow="true" fxLayout="row" fxLayoutGap="27px">
+
+          <a class="togglemenu" (click)="sidenav.toggle()">
+              <i class="material-icons" id="menu-icon" style="color:white;">menu</i>
+          </a>
+
+          <div>
+              <span class="apptitle">WAXE</span>
+          </div>
+
+        </div>
+
+    <!-- <div fxShow="true" fxHide.lt-md="true"> -->
+
+      <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+<!-- 
+      <a href="#" mat-button>Menu Item 1</a>
+
+      <a href="#" mat-button>Menu Item 2</a>
+
+      <a href="#" mat-button>Menu Item 3</a>
+
+      <a href="#" mat-button>Menu Item 4</a>
+
+      <a href="#" mat-button>Menu Item 5</a>
+
+      <a href="#" mat-button>Menu Item 6</a> -->
+
+    <!-- </div> -->
+
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill style="position: fixed" class="example-container">
+
+    <mat-sidenav #sidenav fxLayout="column" mode="push" fxLayoutAlign="left" style="background:	#f5f5f5;">
+
+      <div fxLayout="column" fxLayoutAlign="left" style="padding-top: 12px">
+        <div id="menuItem" fxLayout fxLayoutAlign="left">  
+            <a [routerLink]="['']" mat-button class="menuItems" ><i id="letterItem" class="material-icons" style="color:	#888787">dashboard</i>Dashboard</a>
+        </div>
+        <div id="menuItem" fxLayout fxLayoutAlign="left">  
+          <a [routerLink]="['collection']" mat-button class="menuItems" ><i id="letterItem" class="material-icons" style="color:	#888787">view_column</i>Collection</a>
+      </div>
+        <div fxLayout fxLayoutAlign="left" id="settingsMenuItem">   
+            <a [routerLink]="['settings']" mat-button class="menuItems"><i id="settingsItem" style="color:	#888787" class="material-icons">settings</i>Settings</a>
+        </div>
+      </div> 
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <router-outlet></router-outlet>  
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</div>

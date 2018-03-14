@@ -1,0 +1,129 @@
+.container {
+	display: flex;
+	flex-direction: column !important;
+ }
+
+mat-grid-tile {
+	background: lightblue;
+  }
+
+  mat-grid-tile figure {
+	position: relative !important;
+	display: block !important;
+  }
+
+mat-grid-tile div {
+	background: rgba(0,0,0,0.25);
+	color: white;
+	z-index: 400;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	height: 40px;
+	padding: 0 15px;
+	left: 0;
+}
+
+.tiletitle{
+	color: white;
+	z-index: 500;
+	position: absolute;
+	Top: 0;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	height: 40px;
+	padding: 0 15px;
+	left: 0;
+}
+
+.tilesubtitle { 
+	color: white;
+	z-index: 500;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	height: 40px;
+	line-height: 54px;
+	padding: 0 15px;
+	left: 0;
+}
+
+div#filter {
+	background: white;
+	border-top: 1px solid rgba(0,0,0,.12);
+	width: 50%;
+	left: 0;
+	bottom: 0;
+	float: right;
+	position: fixed;
+	height: 56px;
+	line-height: 56px;
+}
+
+div#filter button {
+	margin-left: 8px;
+}
+
+div#filter-panel {
+position: fixed;
+left: 0;
+top: 0;
+bottom: 56px;
+right: 0;
+z-index: 5000;
+background: rgba(0,0,0,.12);
+animation: 200ms fadeIn forwards;
+}
+
+@keyframes fadeIn{
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+div#filter-panel-inner {
+	position: fixed;
+	background: white;
+	padding: 16px;
+	border-radius: 2px;
+	box-shadow: 0 2px 1px rgba(0,0,0,0.25), 0 2px 3px rgba(0,0,0,0.12);
+	left: 16px;
+	bottom: 76px;
+	width: 50%;
+}
+
+div#filter-panel-inner::before {
+	content: "";
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: white;
+	position: fixed;
+	transform: rotate(45deg);
+	left: 42px;
+}
+
+mat-paginator {
+	border-top: 1px solid rgba(0,0,0,.12);
+	width: 50%;
+	right: 0;
+	bottom: 0;
+	float: right;
+	position: fixed;
+}
+
+button#print {
+	position: fixed;
+ 	top: 32px;
+	right: 32px;
+	z-index: 500 !important;
+}

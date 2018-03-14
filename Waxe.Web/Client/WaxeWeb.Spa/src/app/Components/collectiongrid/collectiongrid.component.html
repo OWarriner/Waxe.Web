@@ -1,0 +1,153 @@
+<div class="container" fxLayoutAlign="center " >
+<mat-grid-list cols="8" rowHeight="1:1">
+  <mat-grid-tile>
+    <img src="../assets/images/Takeshi Back.jpg" width="100%"/>
+    <div>
+        <div class="tiletitle">
+            Takecha
+        </div>
+        <div class="tilesubtitle">
+            A Tale of Shiga
+        </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <img src="../assets/images/15356631_1905182593042965_3322706220281594975_n.jpg" width="100%"/>
+    <div>
+        <div class="tiletitle">
+            Traela
+        </div>
+        <div class="tilesubtitle">
+            EP Part I
+        </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <img src="../assets/images/FM001 SIDE A Artwork(1).jpg" width="100%"/>
+    <div>
+        <div class="tiletitle">
+            Forriner
+        </div>
+        <div class="tilesubtitle">
+            Condor EP
+        </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <img src="../assets/images/CS666057-01A-BIG.jpg" width="100%"/>
+    <div>
+        <div class="tiletitle">
+            Forriner
+        </div>
+        <div class="tilesubtitle">
+            Goodnight EP
+        </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <img src="../assets/images/15356631_1905182593042965_3322706220281594975_n.jpg" width="100%"/>
+    <div>
+        <div class="tiletitle">
+            Traela
+        </div>
+        <div class="tilesubtitle">
+            EP Part I
+        </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <img src="../assets/images/15356631_1905182593042965_3322706220281594975_n.jpg" width="100%"/>
+    <div>
+        <div class="tiletitle">
+            Traela
+        </div>
+        <div class="tilesubtitle">
+            EP Part I
+        </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <img src="../assets/images/15356631_1905182593042965_3322706220281594975_n.jpg" width="100%"/>
+    <div>
+        <div class="tiletitle">
+            Traela
+        </div>
+        <div class="tilesubtitle">
+            EP Part I
+        </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <img src="../assets/images/15356631_1905182593042965_3322706220281594975_n.jpg" width="100%"/>
+    <div>
+        <div class="tiletitle">
+            Traela
+        </div>
+        <div class="tilesubtitle">
+            EP Part I
+        </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <img src="../assets/images/15356631_1905182593042965_3322706220281594975_n.jpg" width="100%"/>
+    <div>
+        <div class="tiletitle">
+            Traela
+        </div>
+        <div class="tilesubtitle">
+            EP Part I
+        </div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<button mat-fab type="button" id="print" style="background: rgb(68, 68, 68);"><i class="material-icons">add</i></button>
+
+<div id="filter">
+    <button mat-mini-fab type="button" style="background: #000000;" (click)="toggleFilter()"><i class="material-icons" style="color: white">filter_list</i></button>
+    <div id="filter-panel" *ngIf="filtersOpened">
+      <div id="filter-panel-inner">
+          <form class="example-form">
+              <mat-form-field class="example-full-width">
+                <input type="text" placeholder="Artist" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                <mat-autocomplete #auto="matAutocomplete">
+                  <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                    {{ option }}
+                  </mat-option>
+                </mat-autocomplete>                
+              </mat-form-field>
+              <mat-form-field>                 
+                    <mat-select placeholder="Decade">
+                            <mat-option *ngFor="let food of foods" [value]="food.value">
+                              {{ food.viewValue }}
+                            </mat-option>
+                          </mat-select>
+                </mat-form-field>                
+            </form>
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <input type="text" placeholder="Record Label" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                  <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                      {{ option }}
+                    </mat-option>
+                  </mat-autocomplete>                
+                </mat-form-field>
+                <mat-form-field>                 
+                    <mat-select placeholder="Country">
+                        <mat-option *ngFor="let food of foods" [value]="food.value">
+                                  {{ food.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>      
+              </form>
+      </div>
+    </div>
+  </div>
+
+<mat-paginator #paginator
+[pageSize]="10"
+[pageSizeOptions]="[5, 10, 20]">
+</mat-paginator>  
+
+</div>
